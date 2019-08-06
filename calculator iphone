@@ -1,0 +1,167 @@
+import React from 'react';
+import { StyleSheet, Text, View,Image,TextInput,TouchableOpacity} from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient'
+
+export default class App extends React.Component {
+  render() {
+    return (
+
+      <LinearGradient
+        //https://uigradients.com/#Reef
+        colors={['#000000', '#000000', '#000000']}
+        style={{flex: 1}}
+      >
+        <View style={{flex: 1}}>
+          <View style={{flex: 1}} />
+        <View style={{flex: 1, flexDirection: 'row',justifyContent: 'center'}}>
+          <View style={{flex: 1}}>
+          <Text style={{ color:'white',fontSize:70,textAlign:'right'}}>0</Text>
+          </View>
+        </View>
+        <View style={{flex: 1, flexDirection: 'row',justifyContent: 'center'}}>
+              <View style={{flex: 1}}>
+              <TouchableOpacity style={styles.btn1}>
+              <Text style={{ color:'black',fontSize:30}}>AC</Text>
+              </TouchableOpacity>
+              </View>
+              <View style={{flex: 1}}>
+              <TouchableOpacity style={styles.btn1}>
+              <Text style={{ color:'black',fontSize:30}}>+/-</Text>
+              </TouchableOpacity>
+              </View>
+              <View style={{flex: 1}}>
+              <TouchableOpacity style={styles.btn1}>
+              <Text style={{ color:'black',fontSize:30}}>%</Text>
+              </TouchableOpacity>
+              </View>
+              <View style={{flex: 1}}>
+              <TouchableOpacity style={styles.btn2}>
+              <Text style={{ color:'black',fontSize:30}}>/</Text>
+              </TouchableOpacity>
+              </View>
+        </View>
+
+           <View style={{flex: 1, flexDirection: 'row',justifyContent: 'center'}}>
+              <View style={{flex: 1}} >
+              <TouchableOpacity style={styles.btn3}>
+              <Text style={{ color:'black',fontSize:30}}>7</Text>
+              </TouchableOpacity>
+              </View>
+              <View style={{flex: 1}} >
+              <TouchableOpacity style={styles.btn3}>
+              <Text style={{ color:'black',fontSize:30}}>8</Text>
+              </TouchableOpacity>
+              </View>
+              <View style={{flex: 1}} >
+              <TouchableOpacity style={styles.btn3}>
+              <Text style={{ color:'black',fontSize:30}}>9</Text>
+              </TouchableOpacity>
+              </View>
+              <View style={{flex: 1}} >
+              <TouchableOpacity style={styles.btn2}>
+              <Text style={{ color:'black',fontSize:30}}>x</Text>
+              </TouchableOpacity>
+              </View>
+          </View>
+
+          <View style={{flex: 1, flexDirection: 'row',justifyContent: 'center'}}>
+              <View style={{flex: 1}} >
+              <TouchableOpacity style={styles.btn3}>
+              <Text style={{ color:'black',fontSize:30}}>4</Text>
+              </TouchableOpacity>
+              </View>
+              <View style={{flex: 1}} >
+              <TouchableOpacity style={styles.btn3}>
+              <Text style={{ color:'black',fontSize:30}}>5</Text>
+              </TouchableOpacity>
+              </View>
+              <View style={{flex: 1}} >
+              <TouchableOpacity style={styles.btn3}>
+              <Text style={{ color:'black',fontSize:30}}>6</Text>
+              </TouchableOpacity>
+              </View>
+              <View style={{flex: 1}} >
+              <TouchableOpacity style={styles.btn2}>
+              <Text style={{ color:'black',fontSize:30}}>-</Text>
+              </TouchableOpacity>
+              </View>
+          </View>
+          <View style={{flex: 1, flexDirection: 'row',justifyContent: 'center'}}>
+              <View style={{flex: 1}} >
+              <TouchableOpacity style={styles.btn3}>
+              <Text style={{ color:'black',fontSize:30}}>1</Text>
+              </TouchableOpacity>
+              </View>
+              <View style={{flex: 1}} >
+              <TouchableOpacity style={styles.btn3}>
+              <Text style={{ color:'black',fontSize:30}}>2</Text>
+              </TouchableOpacity>
+              </View>
+              <View style={{flex: 1}} >
+              <TouchableOpacity style={styles.btn3}>
+              <Text style={{ color:'black',fontSize:30}}>3</Text>
+              </TouchableOpacity>
+              </View>
+              <View style={{flex: 1}} >
+              <TouchableOpacity style={styles.btn2}>
+              <Text style={{ color:'black',fontSize:30}}>+</Text>
+              </TouchableOpacity>
+              </View>
+          </View>
+
+          <View style={{flex: 1, flexDirection: 'row',justifyContent: 'center'}}>
+              <View style={{flex: 2}} >
+              <TouchableOpacity style={styles.btn3}>
+              <Text style={{ color:'black',fontSize:30}}>0</Text>
+              </TouchableOpacity>
+              </View>
+              <View style={{flex: 1}} >
+              <TouchableOpacity style={styles.btn3}>
+              <Text style={{ color:'black',fontSize:30}}>.</Text>
+              </TouchableOpacity>
+              </View>
+              <View style={{flex: 1}} >
+              <TouchableOpacity style={styles.btn2}>
+              <Text style={{ color:'black',fontSize:30}}>=</Text>
+              </TouchableOpacity>
+              </View>
+             
+
+          </View>
+
+
+
+        
+          
+        </View>
+      </LinearGradient>
+    );
+  }
+}
+const styles = StyleSheet.create({
+  btn1:{
+      alignItems: 'center',
+      height:60,
+      backgroundColor: 'white',
+      padding: 10,
+      margin:10,
+      borderRadius: 30,
+      
+  },
+  btn2:{
+      alignItems: 'center',
+      height:60,
+      backgroundColor: 'orange',
+      padding: 10,
+      margin:10,
+      borderRadius: 30
+  },
+  btn3:{
+      alignItems: 'center',
+      height:60,
+      backgroundColor: '#46494d',
+      padding: 10,
+      margin:10,
+      borderRadius: 30
+  }
+})
